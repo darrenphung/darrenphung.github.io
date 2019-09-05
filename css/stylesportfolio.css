@@ -1,0 +1,402 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+      color: Inherit;
+      font-family: inherit;
+      font-size: inherit;
+      text-decoration: none;
+  }
+
+  u {
+    font-size: 1.3em;
+    margin-left: 1em;
+  }
+  
+  h1 {
+      text-align: center;
+      color: #000000;
+  }
+  
+  h2{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .list {
+    font-size: 1.8em;
+  }
+
+  p, ul {
+    font-size: 1.1em;
+    color: #808080;
+  }
+  
+
+  .namecolour {
+      width:100%;
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .containerportfolio {
+      width: 65%;
+      margin: auto;
+      margin-top: 2%;
+  }
+
+  .content {
+    width:100%;
+  }
+  
+  .contentlist{
+    list-style-type: disc;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .subtitles {
+    margin-top: 18%;
+    margin-bottom: 18%;
+  }
+
+  body {
+      font-family: 'Niramit', sans-serif;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+  }
+
+  .content-image {
+    width: 100%;
+  }
+
+  .content-image1 {
+    width: 90%;
+    margin-left: 2%;
+    border:1px solid #021a40;
+  } 
+
+  /*==LIGHTBOX==*/
+  .lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+  
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+  }
+  
+  .lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 2%;
+  }
+  
+  .lightbox:target {
+    outline: none;
+    display: block;
+  }
+
+
+
+  /*==NAVBAR==*/
+  
+  #navbar {
+    background: white;
+    color: black;
+    position: relative;
+    top: 0;
+    height: 100px;
+    line-height: 60px;
+    width: 80%;
+    z-index: 10;
+    margin: auto;
+  }
+  
+  
+  .logo {
+    height:100%;
+    float: left;
+    margin-left: 28px;
+    letter-spacing: 1px;
+  } @media(max-width: 768px) {
+    }
+  
+  #navbar ul {
+    float: right;
+    list-style: none;
+    /* margin-right: 14px; */
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  } @media(max-width: 640px) {
+      #navbar ul {
+        display: none;
+      }
+    } @media(orientation: landscape) {
+        #navbar ul {
+          display: inline-block;
+        }
+      }
+  
+  #navbar li {
+    display: inline-block;
+  }
+  
+  #navbar li a {
+    color: black;
+    display: block;
+    font-size: 1em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #navbar li a:hover {
+    color: black;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  
+  
+  /* Animated Bottom Line */
+  #navbar li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: rgb(13, 26, 38);
+  }
+  
+  #navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  #navbar li a:after {
+    background: rgb(13, 26, 38);
+    right: 0;
+  }
+  
+  #navbar li a:hover:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+  
+  #navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+  }
+  
+
+  /* Side Navigation Bar */
+  
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: white;
+    background-color: orangered;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.footer{
+  position: absolute;
+	width: 100%;
+	min-height: 50px;
+  background: linear-gradient(45deg, rgb(231, 60, 60), #EE7752, rgb(255, 174, 0), rgb(255, 254, 0));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
+}
+
+.footerfont{
+  color:white;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+  /*==NAVBAR==*/
+  
+  #navbarbottom {
+    background: transparent;
+    color: black;
+    position: relative;
+    top: 0;
+    height: 100px;
+    line-height: 60px;
+    width: 80%;
+    z-index: 10;
+    margin: auto;
+  }
+  
+  #navbarbottom ul {
+    list-style: none;
+    /* margin-right: 14px; */
+    text-align: center;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  } @media(max-width: 640px) {
+      #navbar ul {
+        display: none;
+      }
+    } @media(orientation: landscape) {
+        #navbar ul {
+          display: inline-block;
+        }
+      }
+  
+  #navbarbottom li {
+    display: inline-block;
+  }
+  
+  #navbarbottom li a {
+    color: black;
+    display: block;
+    font-size: 1em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  
+  #navbarbottom li a:hover {
+    color: black;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  
+  
+  /* Animated Bottom Line */
+  #navbarbottom li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: rgb(13, 26, 38);
+  }
+  
+  #navbarbottom li a:before {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  #navbarbottom li a:after {
+    background: rgb(13, 26, 38);
+    right: 0;
+  }
+  
+  #navbarbottom li a:hover:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+  
+  #navbarbottom li a:hover:after {
+    background: transparent;
+    width: 100%;
+  }
