@@ -38,7 +38,7 @@
 
 .containerportfolio {
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width:px;
     margin: 0 auto;
     padding: 0 20px;
@@ -52,14 +52,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 90%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 90%; }
   .column,
   .columns {
     margin-left: 4%; }
