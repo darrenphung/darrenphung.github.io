@@ -105,6 +105,10 @@
     border:1px solid #021a40;
   } 
 
+  .content-image2 {
+    width: 80%;
+  } 
+
   /*==LIGHTBOX==*/
   .lightbox {
     /** Default lightbox to hidden */
@@ -138,7 +142,7 @@
   /*==NAVBAR==*/
   
   #navbar {
-    background: white;
+    background: transparent;
     color: black;
     position: relative;
     top: 0;
@@ -399,4 +403,12 @@
   #navbarbottom li a:hover:after {
     background: transparent;
     width: 100%;
+  }
+
+  .engenesis{
+    text-decoration: underline;
+  }
+
+  .engenesis:hover{
+    color: orange;
   }
