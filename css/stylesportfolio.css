@@ -89,7 +89,7 @@
   }
 
   body {
-      font-family: 'Niramit', sans-serif;
+      font-family: 'Lato', sans-serif;
       width: 100%;
       height: 100%;
       margin: auto;
@@ -186,14 +186,13 @@
   #navbar li a {
     color: #BEBEBE;
     display: block;
-    font-size: 1em;
+    font-size: 1.1em;
     height: 50px;
     letter-spacing: 1px;
     margin: 0 20px;
     padding: 0 10px;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
   }
   
   #navbar li a:hover {
@@ -341,14 +340,13 @@
   #navbarbottom li a {
     color: black;
     display: block;
-    font-size: 1em;
+    font-size: 1.1em;
     height: 50px;
     letter-spacing: 1px;
     margin: 0 20px;
     padding: 0 10px;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
   }
